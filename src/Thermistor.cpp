@@ -5,6 +5,8 @@ Thermistor::~Thermistor(){}
 
 Thermistor::Thermistor(){}
 
+Thermistor::Thermistor(uint8_t t_pin):m_pin(t_pin){}
+
 Thermistor::Thermistor(uint8_t t_pin, int t_ro, int t_rf) : m_pin(t_pin), m_ro(t_ro), m_rf(t_rf){}
 
 Thermistor::Thermistor(uint8_t t_pin, int t_ro, int t_rf, int t_beta) : m_pin(t_pin), m_ro(t_ro), m_rf(t_rf), m_beta(t_beta){}
